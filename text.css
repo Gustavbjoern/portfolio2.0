@@ -1,0 +1,11 @@
+h1{
+    font-family: monospace;
+
+}
+p{
+    font-family: sans-serif;
+}
+body{
+    max-width: 70vw;
+    margin: 0 auto;
+}

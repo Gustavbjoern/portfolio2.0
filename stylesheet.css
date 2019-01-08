@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+}
+.wrapper{
+    max-width: 1800px;
+    box-sizing: border-box;
+}
+
+/*splashimage*/
+
+.splashimage {
+     background-color: black;
+    text-align: center;
+}
+
+.splashimage img {
+    margin: auto;
+    max-width: 100vw;
+    max-height: 900px;
+    text-align: center;
+}
+/*splashimage*/
+/*cv*/
+.cv{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+}
+.cv h1, h2{
+    font-family: monospace;
+}
+.cv p{
+    font-family:sans-serif;
+}
+.cv img{
+    max-width: 40vw;
+    max-height: 500px;
+    margin: 5vw;
+    padding: 25px;
+}
+
+.cvtext{
+    margin: 5vw;
+}
+
+/*cv*/
+/*portfolio*/
+.portfolioheader{
+    text-align: center;
+    font-family: monospace
+}
+.portfolio {
+    display: grid;
+    max-width: 1600px;
+    grid-template-columns:  repeat(4, 1fr);
+    grid-gap: 1vw;
+
+    font-family: monospace;
+    text-align: center;
+
+}
+div.portfolio{
+    max-width: 99vw;
+
+}
+.portfolio img{
+    max-width: 100%;
+    border: 4px solid black;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.artsandcrafts:hover img{
+    filter: blur(2px)brightness(60%);
+}
+.ekdal:hover img{
+    filter: blur(2px)brightness(60%);
+}
+.sex:hover img{
+    filter: blur(2px)brightness(60%);
+}
+.fronter:hover img{
+    filter: blur(2px)brightness(60%);
+}
+/*portfolio*/
+/*mediaqueries*/
+@media only screen and (max-width: 900px){
+    .portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1vw;
+}
+}
+@media only screen and (max-width: 500px){
+    .cv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+}
+
+/*mediaqueries*/
