@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 124">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_9);
+      }
+
+      .cls-2 {
+        fill: #ffb4aa;
+      }
+
+      .cls-3 {
+        fill: #fffdfd;
+        font-size: 15px;
+        font-family: HelveticaNeue, Helvetica Neue;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Artboard_9">
+      <rect width="297" height="124"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_9" data-name="Artboard – 9" class="cls-1">
+    <rect class="cls-4" width="297" height="124"/>
+    <path id="Path_4513" data-name="Path 4513" class="cls-2" d="M5.92,0H291.326a5.961,5.961,0,0,1,5.92,6V118.352a5.961,5.961,0,0,1-5.92,6H5.92a5.961,5.961,0,0,1-5.92-6V6A5.961,5.961,0,0,1,5.92,0Z" transform="translate(-0.156)"/>
+    <text id="EKSAMEN_-_UDVIDET_ÅBNINGSTID:_Det_er_eksamenstid_og_mange_af_jer_har_brug_for_at_være_længere_på_skolen._I_den_forbindelse_har_KEA_udvidet_åbningstid:_" data-name="EKSAMEN - UDVIDET ÅBNINGSTID:
+ 
+Det er eksamenstid og mange af jer har brug for at være længere på skolen. I den forbindelse har KEA udvidet åbningstid: " class="cls-3" transform="translate(19 9)"><tspan x="0" y="14">EKSAMEN - UDVIDET ÅBNINGSTID:</tspan><tspan x="0" y="31"> </tspan><tspan x="0" y="48">Det er eksamenstid og mange af jer har </tspan><tspan x="0" y="65">brug for at være længere på skolen. I </tspan><tspan x="0" y="82">den forbindelse har KEA udvidet </tspan><tspan x="0" y="99">åbningstid: </tspan></text>
+  </g>
+</svg>

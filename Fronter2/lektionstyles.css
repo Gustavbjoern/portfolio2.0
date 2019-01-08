@@ -1,0 +1,141 @@
+header {
+    position: absolute;
+    background-color: #6C586B;
+    width: 90vw;
+    height: 3em;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    margin: 1rem;
+    color: white;
+    font-size: 1.3rem;
+    position: relative;
+    bottom: 0.2em;
+    right: 1em;
+}
+
+#streg {
+    background-color: #6C586B;
+    height: 0.5em;
+    width: 90vw;
+}
+
+#sara {
+    background-image: url(kvinde%20%E2%80%93%201.svg);
+    height: 20vw;
+    width: 20vw;
+    background-repeat: no-repeat;
+    margin-top: 1vw;
+
+}
+
+#sara p {
+    position: relative;
+    top: 18vw;
+    left: 4.5vw;
+    font-size: 1.2em;
+    display: flex;
+}
+
+#pil {
+    background-image: url(tilbage-sort%20%E2%80%93%201.svg);
+    height: 2em;
+    width: 2em;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 0.3em;
+    bottom: 0.4em;
+}
+
+/*PROJEKT*/
+
+#projekt {
+    background-color: #FEB0A6;
+    color: white;
+    height: 13em;
+    width: 90vw;
+    border-radius: 1rem;
+}
+
+#lektier {
+    background-color: #FEB0A6;
+    color: white;
+    height: 10em;
+    width: 25em;
+}
+
+#projekt h1 {
+    margin-top: 1.5em;
+    position: relative;
+    top: 0.3em;
+    left: 0.5em;
+    color: white;
+}
+
+#projekt p {
+    position: relative;
+    left: 2.3em;
+    top: 0.7em;
+    font-size: 1.5rem;
+
+}
+
+#projekt h3 {
+    position: relative;
+    top: 3em;
+    left: 1em;
+
+}
+
+
+#gps {
+    background-image: url(sted%20%E2%80%93%201.svg);
+    height: 4em;
+    width: 4em;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+
+/*DOKUMENTER OG LEKTIER*/
+
+#dokumenter {
+    background-color: #FEB0A6;
+    color: white;
+    height: 13em;
+    width: 90vw;
+    border-radius: 1rem;
+}
+
+#dokumenter h1 {
+    padding-left: 0.5em;
+    padding-top: 1em;
+    font-size: 1.8em;
+    font-size: 20px;
+    color: white;
+}
+
+#lektier {
+    background-color: #FEB0A6;
+    color: white;
+    height: 13em;
+    width: 90vw;
+    line-height: 3.5em;
+    border-radius: 1rem;
+
+}
+
+#lektier h1 {
+    padding-left: 0.3em;
+    padding-top: 1em;
+    color: white;
+    font-size: 20px;
+}
+
+h1 {
+    color: #6C586B;
+}

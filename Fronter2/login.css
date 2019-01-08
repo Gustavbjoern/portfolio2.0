@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+}
+.footer a{
+    color: #FFFDFD;
+}
+#login{
+    height: 50px;
+}
+input{
+    border-radius: 5px;
+}
+input[type=text]{
+    width: 250px;
+    height: 29px;
+    margin: 13px;
+    background-color: #4E4150;
+    border: 0px;
+}
+input[type=password]{
+    width: 250px;
+    height: 29px;
+    margin: 13px;
+    margin-bottom: 0px;
+    background-color: #4E4150;
+    border: 0px;
+}
+input[type=submit]{
+    background-color: #D37B79;
+    margin-top: 30px;
+    border: 0px;
+    width: 280px;
+}
+input[type=checkbox]{
+    position: absolute;
+
+}
+label{
+    position: absolute;
+    top:103px;
+    left: 180px;
+}
+.container{
+    height: 100vh;
+    background-color: #69596A;
+    position: relative;
+    justify-content: center;
+    display: flex;
+
+
+
+}
+.profilbillede {
+
+    position: absolute;
+    top: 50vw;
+    display: flex;
+    justify-content: center;
+
+}
+.kealogo img{
+    width: 30vw;
+    position:absolute;
+    z-index: 2;
+    top: 30vw;
+    left: 20vw;
+
+}
+
+/*
+.sprogknap_parent{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+*/
+
+.sprogknap{
+
+    width:10vw;
+    z-index: 1;
+    top: 1vw;
+    left: 1vw;
+    position: absolute;
+
+
+
+}
+.kunst{
+/*     max-width: 400px;*/
+     position: absolute;
+    width: 100%
+
+}
+
+.formgroup{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 90vw;
+    justify-content: center;
+}
+
+.footerwrapper{
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    position: fixed;
+    top: 150vw;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}

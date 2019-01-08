@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 251 65">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_8);
+      }
+
+      .cls-2, .cls-3 {
+        fill: #d37b79;
+      }
+
+      .cls-3 {
+        font-size: 18px;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: Helvetica;
+      }
+
+      .cls-4 {
+        fill: #fffdfd;
+        font-size: 16px;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Artboard_8">
+      <rect width="251" height="65"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_8" data-name="Artboard – 8" class="cls-1">
+    <rect class="cls-5" width="251" height="65"/>
+    <g id="Group_2560" data-name="Group 2560" transform="translate(0 -0.282)">
+      <rect id="Button" class="cls-2" width="250" height="50" rx="2"/>
+      <text id="Login" class="cls-3" transform="translate(116 31)"><tspan x="-22.021" y="0">Login</tspan></text>
+    </g>
+    <text id="Log_på" data-name="Log på" class="cls-4" transform="translate(119 32)"><tspan x="-24.469" y="0">Log på</tspan></text>
+  </g>
+</svg>

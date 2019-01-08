@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 301 125">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-lokale_10);
+      }
+
+      .cls-2 {
+        fill: #ffb4aa;
+      }
+
+      .cls-3 {
+        fill: #fffdfd;
+        font-size: 15px;
+        font-family: HelveticaNeue, Helvetica Neue;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-lokale_10">
+      <rect width="301" height="125"/>
+    </clipPath>
+  </defs>
+  <g id="lokale_10" data-name="lokale – 10" class="cls-1">
+    <rect class="cls-4" width="301" height="125"/>
+    <rect id="Rectangle_805" data-name="Rectangle 805" class="cls-2" width="301.246" height="124.352" rx="6" transform="translate(-0.156 0.223)"/>
+    <text id="LOKALE_MERKUR_Lokale_Merkur_skal_anvendes_til_kursus_i_dag_og_kan_derfor_ikke_anvendes_til_gruppearbejde_efter_kl._13_i_dag_tirsdag_den_20._november." data-name="LOKALE MERKUR
+
+Lokale Merkur skal anvendes til kursus i dag og kan derfor ikke anvendes til gruppearbejde efter kl. 13 i dag tirsdag den 20. november." class="cls-3" transform="translate(21 9)"><tspan x="0" y="14">LOKALE MERKUR</tspan><tspan x="0" y="31"></tspan><tspan x="0" y="48">Lokale Merkur skal anvendes til kursus i </tspan><tspan x="0" y="65">dag og kan derfor ikke anvendes til </tspan><tspan x="0" y="82">gruppearbejde efter kl. 13 i dag tirsdag </tspan><tspan x="0" y="99">den 20. november.</tspan></text>
+  </g>
+</svg>

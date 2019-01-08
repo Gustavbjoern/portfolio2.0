@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 306 125">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_7);
+      }
+
+      .cls-2 {
+        fill: #ffb4aa;
+      }
+
+      .cls-3 {
+        fill: #fffdfd;
+        font-size: 15px;
+        font-family: HelveticaNeue, Helvetica Neue;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Artboard_7">
+      <rect width="306" height="125"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_7" data-name="Artboard – 7" class="cls-1">
+    <rect class="cls-4" width="306" height="125"/>
+    <path id="Path_4514" data-name="Path 4514" class="cls-2" d="M6,0H291.246a6,6,0,0,1,6,6V118.352a6,6,0,0,1-6,6H6a6,6,0,0,1-6-6V6A6,6,0,0,1,6,0Z" transform="translate(4.844 0.223)"/>
+    <text id="Basic_UX_-_uge_3_I_denne_uge_arbejder_vi_med_at_kode_en_html_prototype_på_et_nyt_Fronter._I_er_kommet_i_arbejdsgrupper_her_mandag_som_I_arbejder_videre_i_denne_uge." data-name="Basic UX - uge 3
+
+I denne uge arbejder vi med at kode en html prototype på et nyt Fronter. I er kommet i arbejdsgrupper her mandag, som I arbejder videre i denne uge." class="cls-3" transform="translate(22 8)"><tspan x="0" y="14">Basic UX - uge 3</tspan><tspan x="0" y="31"></tspan><tspan x="0" y="48">I denne uge arbejder vi med at kode en </tspan><tspan x="0" y="65">html prototype på et nyt Fronter. I er </tspan><tspan x="0" y="82">kommet i arbejdsgrupper her mandag, </tspan><tspan x="0" y="99">som I arbejder videre i denne uge.</tspan></text>
+  </g>
+</svg>

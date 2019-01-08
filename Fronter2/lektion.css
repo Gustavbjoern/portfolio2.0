@@ -1,0 +1,7 @@
+.max400 {
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    z-index: -1;

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 20">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-tilbage_3);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-tilbage_3">
+      <rect width="18" height="20"/>
+    </clipPath>
+  </defs>
+  <g id="tilbage_3" data-name="tilbage – 3" class="cls-1">
+    <g id="Group_2563" data-name="Group 2563" transform="matrix(-1, -0.017, 0.017, -1, 173.694, 147.077)">
+      <rect id="Rectangle_777" data-name="Rectangle 777" class="cls-2" width="14" height="3" rx="1.5" transform="translate(175.532 135.389) rotate(143)"/>
+      <rect id="Rectangle_778" data-name="Rectangle 778" class="cls-2" width="14" height="3" rx="1.5" transform="matrix(-0.839, -0.545, 0.545, -0.839, 174.093, 136.474)"/>
+    </g>
+  </g>
+</svg>

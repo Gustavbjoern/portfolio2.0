@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 18">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-lille_mand-5);
+      }
+
+      .cls-2 {
+        fill: #ffb4aa;
+      }
+    </style>
+    <clipPath id="clip-lille_mand-5">
+      <rect width="16" height="18"/>
+    </clipPath>
+  </defs>
+  <g id="lille_mand-5" class="cls-1">
+    <path id="Union_12" data-name="Union 12" class="cls-2" d="M0,370v-2c0-2.2,3.6-4,8-4s8,1.8,8,4v2Zm4-12a4,4,0,1,1,4,4A4,4,0,0,1,4,358Z" transform="translate(0 -354)"/>
+  </g>
+</svg>

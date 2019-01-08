@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 18">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-_klokke_5);
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #ffb4aa;
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        fill: rgba(255,255,255,0);
+      }
+    </style>
+    <clipPath id="clip-_klokke_5">
+      <rect width="16" height="18"/>
+    </clipPath>
+  </defs>
+  <g id="_klokke_5" data-name=" klokke– 5" class="cls-1">
+    <rect class="cls-4" width="16" height="18"/>
+    <g id="Alert" transform="translate(-784 -12462)">
+      <rect id="Rectangle_479" data-name="Rectangle 479" class="cls-2" width="16" height="16" transform="translate(784 12463)"/>
+      <path id="Path_1" data-name="Path 1" class="cls-3" d="M15,14H10a2,2,0,0,1-4,0H1a.961.961,0,0,1-.9-.7,1.068,1.068,0,0,1,.3-1.1A4.026,4.026,0,0,0,2,9V6A6,6,0,0,1,14,6V9a4.026,4.026,0,0,0,1.6,3.2.947.947,0,0,1,.3,1.1A.961.961,0,0,1,15,14Z" transform="translate(783.938 12463)"/>
+    </g>
+  </g>
+</svg>

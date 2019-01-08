@@ -1,0 +1,337 @@
+.purple_baggrund {
+    height: 220px;
+    background-color: rgba(130, 117, 131, 0.75);
+    position: relative;
+    overflow: hidden;
+}
+
+
+.kunst {
+    background-image: url(Artboard%206.svg);
+    background-repeat: no-repeat;
+    height: 100vw;
+    position: relative;
+    top: -10vw;
+    filter: opacity(50%);
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+#forside .billede {
+
+
+
+    /*    justify-content: space-between;*/
+    width: 4000em;
+    height: 30em;
+    z-index: 2;
+    top: -10em;
+    right: 100em;
+
+
+    background-color: #827483;
+    filter: opacity(80%);
+    position: absolute;
+
+
+}
+
+#forside .simon {
+    background-image: url(Artboard%201.png);
+    width: 10rem;
+    height: 8rem;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5em;
+    ;
+    left: 1em;
+    background-size: 80%;
+    z-index: 3;
+
+}
+
+
+#forside .tekst {
+
+    position: absolute;
+    color: white;
+    left: 15em;
+    top: 11em;
+    font-size: 0.6em;
+    z-index: 3;
+}
+
+#forside .box1 {
+    display: flex;
+    position: absolute;
+    top: 15em;
+    right: 1em;
+    width: 90vw;
+    height: 8em;
+    background-color: #FEB0A8;
+    border-radius: 1rem;
+}
+
+
+
+
+#forside .box2 {
+    display: flex;
+    position: absolute;
+    top: 25em;
+    right: 1em;
+    width: 90vw;
+    height: 8em;
+    background-color: #FEB0A8;
+    border-radius: 1rem;
+
+}
+
+#forside .box3 {
+    display: flex;
+    position: absolute;
+    top: 35em;
+    right: 1em;
+    width: 90vw;
+    height: 8em;
+    background-color: #FEB0A8;
+    border-radius: 1rem;
+
+
+}
+
+h1 {
+    color: white;
+    margin-left: 0.5em;
+    ;
+    margin-right: 0.5em;
+    margin-top: 0.3em;
+    font-size: 1.2em;
+}
+
+
+.box1 h3 {
+    color: white;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    font-size: 1em;
+    position: absolute;
+    bottom: 1.6em;
+}
+
+.box2 h3 {
+    color: white;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    font-size: 1em;
+    position: absolute;
+    bottom: 0.5em;
+}
+
+.box3 h3 {
+    color: white;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    font-size: 1em;
+    position: absolute;
+    bottom: 1.3em;
+}
+
+
+
+
+/* BURGER */
+
+header {
+    position: fixed;
+    top: 1vw;
+    background-color: rgba(242, 228, 215, 0.9);
+    z-index: 99;
+}
+
+#container {
+    display: flex;
+    position: fixed;
+    /*    left: 72vw;*/
+    top: 5px;
+    right:
+
+
+}
+
+#search {
+    background-image: url(soeg.svg);
+    width: 4vw;
+    height: 4vw;
+    background-repeat: no-repeat;
+    margin-right: 7vw;
+}
+
+#notification {
+    background-image: url(klokke%E2%80%93%205.svg);
+    width: 4vw;
+    height: 4vw;
+    background-repeat: no-repeat;
+    margin-right: 7vw;
+}
+
+#profile {
+    background-image: url(lille_mand-5.svg);
+    width: 4vw;
+    height: 4vw;
+    background-repeat: no-repeat;
+}
+
+.icon {
+    background-image: url(menu%20%E2%80%93%204.svg);
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    margin-left: 7px;
+    margin-top: -2px;
+
+
+
+}
+
+/////////////////////*TOPNAV*///////////////////
+
+.topnav {
+    overflow: hidden;
+}
+
+/*Links indeni Topnav*/
+
+header nav a {
+    border-right: 0.25rem solid #FEB0A6;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    padding: 1px 30px;
+    font-size: 25px;
+    background-color: #6C586B;
+    line-height: 2.5;
+}
+
+.topnav a:hover {
+    background-color: #FEB0A6;
+    color: white;
+}
+
+
+.topnav .icon {
+    display: none;
+    background-color: transparent;
+}
+
+#link1 {
+    pointer-events: none;
+    display: none;
+    background-color: transparent;
+    border-right: transparent;
+    border-bottom: transparent;
+    border-top: transparent;
+    border-left: transparent;
+}
+
+
+/*//////////////////////////////Telefon////////////////////////////////////////*/
+@media screen and (max-width: 22000px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: left;
+        display: block;
+    }
+
+
+    .topnav.responsive {
+        position: relative;
+
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        top: 0;
+
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav a {
+        float: right;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 19px;
+        background-color: #333;
+        line-height: normal;
+    }
+
+    header nav a {
+        border-right: transparent;
+        border-bottom: 0.25rem solid #f2e4d7;
+    }
+
+
+    #container {
+        /*        position: fixed;*/
+        /*        left: 40vw;*/
+        right: 20px;
+        background-color: rgba(242, 228, 215, 0.9)
+    }
+
+
+    #search {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        margin-top: 2px;
+
+    }
+
+    #notification {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        ;
+        margin-top: 8px;
+    }
+
+    #profile {
+        top: 1vw;
+        width: 37px;
+        height: 37px;
+        margin-right: px;
+        margin-top: 8px;
+    }
+
+    #link1 {
+        pointer-events: none;
+        display: block;
+
+    }
+
+
+}
