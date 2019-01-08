@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <title>Ekdal - tømrer, snedker og meget mere!</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package/site.webmanifest">
+    <link rel="mask-icon" href="favicon_package/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="logo/ekdal_logo_roed.png" alt="Ekdal"></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#forside">Forside</a></li>
+                <li><a href="#om">Om</a></li>
+                <li><a href="#priser">Priser</a></li>
+                <li><a href="#billeder">Billeder</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+        <i class="fas fa-bars" onclick="openNav()"></i>
+    </header>
+
+    <div id="myNav" class="overlay">
+
+        <!-- BUTTON TO CLOSE OVERLAY NAVIGATION -->
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- NAVIGATION OVERLAY CONTENT -->
+
+        <div class="overlay-content">
+            <a href="#forside" onclick="closeNav()">Forside</a>
+            <a href="#om" onclick="closeNav()">Om</a>
+            <a href="#priser" onclick="closeNav()">Priser</a>
+            <a href="#billeder" onclick="closeNav()">Billeder</a>
+            <a href="#kontakt" onclick="closeNav()">Kontakt</a>
+        </div>
+
+
+
+
+    </div>
+
+    <main id="main">
+        <section id="forside">
+            <div class="video"><video controls muted autoplay src="video/ekdalvideo.mp4">
+                    Sorry, your browser doesn't support embedded videos.
+                </video></div>
+            <img src="billeder/mads-forside.jpg" alt="Mads forside">
+        </section>
+
+        <!--OM-->
+        <section class="sectionspace sectionpadding madsom">
+            <h1 id="om">Om Ekdal</h1>
+            <div class="sectionwrapper">
+                <div class="column">
+                    <!-- Her skal være billede -->
+                </div>
+                <div class="column">
+                    <p><img src="billeder/madsekdal.jpg" class="madsfloat" alt="mads ekdal" />Mit navn er Mads Ekdal Dahldorph, og jeg er 28 år gammel. Jeg er tømrersvend med <strong>10 års erfaring</strong> inden for håndværk og byggeri.<br><br>
+
+                        Gennem min tid som håndværker har jeg arbejdet og fået stor erfaring med blandt andet tage, køkkener, gulve, døre, vinduer, gipsvægge/lofter, skure, terrasser og meget, meget mere.<br><br>
+
+                        Jeg har stået på skateboard i mange år, og jeg ved, hvad en god skatepark indebærer. <strong>Jeg har specialiseret mig i byggeri af skateparker</strong> – det er en passion for mig, og jeg vil med glæde rådgive og hjælpe med skatepark-projekter.
+
+                        Jeg er en pligtopfyldende, fleksibel og passioneret håndværker. Jeg bestræber mig altid på at opfylde kundens behov og går aldrig på kompromis med mit håndværk.</p>
+                </div>
+
+
+            </div>
+        </section>
+        <div class="mads">
+            <img src="billeder/madsekdal.jpg" alt="mads ekdal" />
+        </div>
+        <section class="sectionspace sectionpadding">
+            <h1 id="priser">Priser</h1>
+            <div class="column">
+                <p>Timepris:<br>
+                    <strong>395 DKK + moms.</strong>
+                    Der faktureres minimum 2 timer pr. opgave.<br><br>
+
+                    Kørsel:<br>
+                    <strong>Første 10 km 65 DKK + moms.</strong>
+                    Efterfølgende 10 km 35 DKK + moms.<br><br>
+
+                    Der vil som minimum blive faktureret 763 DKK + moms, som dækker 10 km kørsel og 2 timers arbejde.</p>
+            </div>
+
+            <div class="ring"><a href="tel:30383073">Ring på tlf. 31 38 30 73</a></div>
+
+        </section>
+
+        <section class="sectionspace sectionpadding">
+            <h1 id="billeder">Billeder</h1>
+            <p class="billedtekst-padding">Her kan du se et udpluk af nogle af de projekter, jeg har lavet - bænke, ovenlysvinduer, skate-ramper med mere.</p>
+
+
+            <div id="slideshow">
+                <div>
+                    <img src="billeder/baenk-ekdal.jpg" alt="Bænk">
+                </div>
+                <div>
+                    <img src="billeder/ovenvindue-ekdal.jpg" alt="Ovenlysvindue">
+                </div>
+                <div>
+                    <img src="billeder/skaterampe-ekdal.jpg" alt="Skaterampe">
+                </div>
+                <div>
+                    <img src="billeder/skaterampe2-ekdal.jpg" alt="Skaterampe 2">
+                </div>
+                <div>
+                    <img src="billeder/planteboks-ekdal.jpg" alt="Planteboks">
+                </div>
+                <div>
+                    <img src="billeder/vinduer-ekdal.jpg" alt="Vinduer">
+                </div>
+            </div>
+
+
+            <div class="sectionwrapper omfix">
+                <div class="billede">
+                    <a href="billeder/baenk-ekdal.jpg"><img src="billeder/baenk-ekdal.jpg" alt="Bænk"></a>
+                </div>
+                <div class="billede"><a href="billeder/ovenvindue-ekdal.jpg"><img src="billeder/ovenvindue-ekdal.jpg" alt="Ovenlysvindue"></a></div>
+                <div class="billede"><a href="billeder/skaterampe-ekdal.jpg"><img src="billeder/skaterampe-ekdal.jpg" alt="Skaterampe"></a></div>
+                <div class="billede"><a href="billeder/skaterampe2-ekdal.jpg"><img src="billeder/skaterampe2-ekdal.jpg" alt="Skaterampe 2"></a></div>
+                <div class="billede"><a href="billeder/planteboks-ekdal.jpg"><img src="billeder/planteboks-ekdal.jpg" alt="Planteboks"></a></div>
+                <div class="billede"><a href="billeder/vinduer-ekdal.jpg"><img src="billeder/vinduer-ekdal.jpg" alt="Vinduer"></a></div>
+                <div class="billede"></div>
+                <div class="billede"></div>
+            </div>
+        </section>
+        <section class="sectionpadding">
+            <section class="sectionspace sectionkontakt">
+                <h1 id="kontakt">Kontakt</h1>
+                <p>Du kan kontakte mig på telefonnummer <strong>31383073</strong>, sende mig en e-mail på <strong>mads@ekdal.dk</strong> eller skrive en besked via formularen herunder!</p>
+                <div class="container">
+                    <form id="contact" method="post">
+                        <fieldset>
+                            <input placeholder="Navn*" type="text" tabindex="1" required>
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="E-mail*" type="email" tabindex="2" required>
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Telefonnummer*" type="tel" tabindex="3" required>
+                        </fieldset>
+                        <fieldset>
+                            <textarea placeholder="Skriv din besked*" tabindex="4" required></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <button name="submit" type="submit" id="contact-submit" data-submit="...Sender">Send</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+            <section class="sectionspace findos">
+                <h1>Find os her</h1>
+
+                <div class="map-responsive">
+
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Allersgade%209A%2C%202200%20K%C3%B8benhavn%20N&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe><a href="https://www.crocothemes.net">crocothemes.net</a></div>
+                        <style>
+                            .mapouter {
+                                text-align: right;
+                                height: 500px;
+                                width: 600px;
+                            }
+
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 500px;
+                                width: 600px;
+                            }
+
+                        </style>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="sectionwrapper">
+            <div class="column">
+                <p>Tømrerfirmaet Ekdal
+                    <br>Adresse: Allersgade 9A, 2200 København N
+                    <br>CVR: 36784350
+                    <!--Åbningstider for henvendelser??-->
+                    <br>Telefon: 31383073
+                    <br>E-mail: mads@ekdal.dk</p>
+            </div>
+            <div class="column">
+                <!-- her skal være google maps-->
+            </div>
+        </div>
+    </footer>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "50%";
+            document.getElementById("main").style.opacity = "0.6";
+        }
+
+    </script>
+
+    <script>
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0";
+            document.getElementById("main").style.opacity = "1";
+        }
+
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            // Transition effect for navbar
+            $(window).scroll(function() {
+                // checks if window is scrolled more than 500px, adds/removes solid class
+                if ($(this).scrollTop() > 1) {
+                    $('.navbar').addClass('solid');
+                } else {
+                    $('.navbar').removeClass('solid');
+                }
+            });
+        });
+
+    </script>
+
+    <script>
+        $("#slideshow > div:gt(0)").hide();
+
+        setInterval(function() {
+            $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+        }, 3000);
+
+    </script>
+
+</body>
+
+</html>

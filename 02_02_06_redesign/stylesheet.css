@@ -1,0 +1,907 @@
+html {
+    overflow-x: hidden;
+    min-width: 200px;
+}
+
+body {
+    display: block;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    border: 0;
+}
+
+/* Custom Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #30415d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+main {
+    padding: 0 1em 1em 1em;
+    transition: 1s ease;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 0.3em;
+    font-size: 1em;
+    color: #30415d;
+    text-transform: uppercase;
+}
+
+strong {
+    color: #CF6766;
+}
+
+p {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 0.8em;
+}
+
+.mads {
+    display: block;
+    width: 100%;
+    padding: 1em 0;
+}
+
+.mads img {
+    max-width: 100%;
+}
+
+.madsfloat {
+    display: none;
+}
+
+.ring {
+    margin: 3em 0 0 0;
+    text-align: center;
+}
+
+.ring a {
+    background-color: rgba(48, 65, 93, 0.8);
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s ease;
+    animation: color 10s infinite;
+    font-size: 0.7em;
+}
+
+@keyframes color {
+    0% {
+        background-color: #30415d;
+    }
+
+    45% {
+        background-color: #30415d;
+    }
+
+    50% {
+        background-color: #CF6766;
+    }
+
+    95% {
+        background-color: #CF6766;
+    }
+
+    100% {
+        background-color: #30415d;
+    }
+
+}
+
+/*Menu*/
+.logo {
+    width: 30%;
+    padding: 0.4em 0.4em 0.2em 0.4em;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    flex: auto;
+    flex-wrap: wrap;
+    display: flex;
+    white-space: nowrap;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    background-color: rgba(48, 65, 93, 0.9);
+    position: fixed;
+    z-index: 1;
+}
+
+
+ul {
+    flex: auto;
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 2%;
+    padding: 0;
+    margin-top: 0%;
+    overflow: hidden;
+    text-align: center;
+}
+
+header li {
+    display: inline-block;
+}
+
+header li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    margin: 0 0.8em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    text-shadow: 1px 1px #000000;
+}
+
+li a:hover {
+    color: #CF6766;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 4.2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    display: none;
+}
+
+.fa-bars {
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 1em;
+    padding-top: 0.4em;
+    padding-right: 0.5em;
+    cursor: pointer;
+    color: white;
+}
+
+.overlay {
+    width: 0;
+    height: auto;
+    z-index: 7;
+    background-color: #CF6766;
+    overflow-x: hidden;
+    transition: 0.5s ease;
+    float: right;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.overlay a:hover {
+    color: #30415D;
+}
+
+#myNav .closebtn {
+    text-align: right;
+    font-size: 3em;
+    padding: 0.25em 0.3em 0.4em 0;
+    line-height: 0.5;
+}
+
+.overlay-content {
+    position: relative;
+    top: 38%;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.overlay a {
+    padding: 0.7em;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s ease;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.navbar {
+    background-color: transparent;
+    transition: 0.5s ease;
+}
+
+.solid {
+    background-color: rgba(48, 65, 93, 0.9);
+}
+
+/*main*/
+
+#forside img {
+    width: 150%;
+    margin: 0 -1em;
+}
+
+video {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.video {
+    margin: 0 -1em;
+    display: none;
+}
+
+.sectionspace {
+    padding-top: 1em;
+    margin-bottom: 1em;
+}
+
+.sectionspace h1 {
+    padding-top: 2em;
+    margin-top: -2em;
+}
+
+
+
+.column {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+/*billeder*/
+
+
+#slideshow {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 9em;
+    padding: 0;
+}
+
+#slideshow img {
+    max-width: 100%;
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.billede {
+    display: none;
+}
+
+.billedtekst-padding {
+    padding-bottom: 0.7em;
+}
+
+.omfix {
+    display: none;
+}
+
+
+.billede {
+    display: block;
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+.billede img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    opacity: 0.8;
+    transition: 0.3s ease;
+    -webkit-backface-visibility: hidden;
+}
+
+.billede img:hover {
+    opacity: 1;
+}
+
+/*kontakt*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+    font-size: 0.8em;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#contact {
+    padding: 1.5em 0 0 0;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #AAA;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background-color: rgba(48, 65, 93, 0.8);
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: rgba(48, 65, 93, 1);
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #999;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+:-moz-placeholder {
+    color: #888;
+}
+
+::-moz-placeholder {
+    color: #888;
+}
+
+:-ms-input-placeholder {
+    color: #888;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.sectionkontakt {
+    width: 100%;
+}
+
+.findos {
+    width: 100%;
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    color: white;
+    background-color: rgba(48, 65, 93, 0.9);
+    font-size: 0.9em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+/*Media queries*/
+@media only screen and (min-width: 200px) {
+    .fa-bars {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 250px) {
+    .fa-bars {
+        font-size: 1.3em;
+    }
+
+    .sectionspace {
+        padding-top: 2em;
+    }
+
+    .sectionspace h1 {
+        padding-top: 3em;
+        margin-top: -3em;
+    }
+
+    #slideshow {
+        height: 10em;
+    }
+
+    .ring a {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (min-width: 300px) {
+    .fa-bars {
+        font-size: 1.4em;
+    }
+
+    #forside img {
+        width: 120%;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    #slideshow {
+        height: 13em;
+    }
+
+    .ring a {
+        font-size: 0.9em;
+    }
+
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact input[type="tel"],
+    #contact input[type="url"],
+    #contact textarea,
+    #contact button[type="submit"] {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (min-width: 350px) {
+    .fa-bars {
+        font-size: 1.5em;
+    }
+
+    .sectionspace h1 {
+        padding-top: 3.5em;
+        margin-top: -3.5em;
+    }
+
+    #slideshow {
+        height: 15em;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .logo {
+        width: 25%;
+    }
+
+    .fa-bars {
+        font-size: 1.6em;
+    }
+
+    #slideshow {
+        height: 17em;
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    .sectionspace h1 {
+        padding-top: 3.8em;
+        margin-top: -3.8em;
+    }
+
+    #slideshow {
+        height: 20em;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .logo {
+        width: 20%;
+    }
+
+    .fa-bars {
+        font-size: 1.7em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    #slideshow {
+        height: 22em;
+    }
+
+    .ring a {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    #slideshow {
+        height: 25em;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .logo {
+        width: 17%;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .fa-bars {
+        display: none !important;
+    }
+
+    #myNav {
+        display: none;
+    }
+
+    .billede {
+        display: inline-block;
+        width: 49.62%;
+        padding: 0.5em;
+    }
+
+    #slideshow {
+        display: none;
+    }
+
+    .omfix {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+
+    .mads {
+        display: none;
+    }
+
+    .madsfloat {
+        display: block;
+        float: right;
+        width: 40%;
+        padding-left: 1em;
+        padding-bottom: 0.5em;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .sectionkontakt {
+        display: inline-block;
+        width: 40%;
+    }
+
+    .findos {
+        display: inline-block;
+        width: 59.35%;
+        vertical-align: top;
+        padding-left: 1em;
+    }
+
+    .map-responsive {
+        height: 27.8em;
+    }
+
+    .sectionpadding {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+
+@media only screen and (min-width: 750px) {
+    .sectionspace h1 {
+        padding-top: 4em;
+        margin-top: -4em;
+    }
+}
+
+@media only screen and (min-width: 762px) {
+    .map-responsive {
+        height: 26.5em;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .logo {
+        width: 15%;
+    }
+
+    #myNav {
+        display: none;
+    }
+
+    .billede {
+        width: 32.96%;
+        padding: 0.5em;
+    }
+
+    #forside img {
+        display: none;
+    }
+
+    .video {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .madsfloat {
+        width: 33%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .sectionspace h1 {
+        padding-top: 4.4em;
+        margin-top: -4.4em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .madsfloat {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 948px) {
+    .map-responsive {
+        height: 25.2em;
+    }
+
+    .madsfloat {
+        width: 27%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .logo {
+        width: 13%;
+    }
+
+    nav {
+        padding: 3.5%;
+    }
+
+    #myNav {
+        display: none;
+    }
+
+    .madsfloat {
+        width: 23%;
+    }
+
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact input[type="tel"],
+    #contact input[type="url"],
+    #contact textarea,
+    #contact button[type="submit"] {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .madsfloat {
+        width: 21%;
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+    .sectionspace h1 {
+        padding-top: 4.6em;
+        margin-top: -4.6em;
+    }
+
+    .madsfloat {
+        width: 19%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .logo {
+        width: 10%;
+    }
+
+    nav {
+        padding: 2.5%;
+    }
+
+    #myNav {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .madsfloat {
+        width: 16%;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .madsfloat {
+        width: 15%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .map-responsive {
+        height: 1em;
+        max-height: 1em;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .madsfloat {
+        width: 14%;
+    }
+}
+
+@media only screen and (min-width: 1350px) {
+    .madsfloat {
+        width: 13%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .madsfloat {
+        width: 12%;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .logo {
+        width: 8%;
+    }
+
+    nav {
+        padding: 2%;
+    }
+
+    #myNav {
+        display: none;
+    }
+
+    .sectionspace h1 {
+        padding-top: 4em;
+        margin-top: -4em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .madsfloat {
+        width: 13%;
+    }
+
+    .ring a {
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .sectionspace h1 {
+        padding-top: 4.5em;
+        margin-top: -4.5em;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    .madsfloat {
+        width: 12%;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    .madsfloat {
+        width: 10%;
+    }
+}
