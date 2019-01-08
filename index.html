@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privat Snak - Deler Du?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="screen">
+        <div id="startskaerm"></div>
+        <div id="spil">
+            <div id="spilscene" class="hide"></div>
+
+
+            <div id="spil_elementer">
+
+                <div id="ond_popup2" class="hide">
+                    <div id="del2" class="ond type2"></div>
+                    <div id="slet2" class="type2"></div>
+                </div>
+
+                <div id="god_popup4" class="hide">
+                    <div id="del4" class="god type4"></div>
+                    <div id="slet4" class="type4"></div>
+                </div>
+
+            </div>
+
+            <div id="spil_ui">
+                <div id="points" class="antal">0</div>
+                <div id="energy">
+                    <div id="liv1"></div>
+                    <div id="liv2"></div>
+                    <div id="liv3"></div>
+                </div>
+
+                <div id="tid"></div>
+                <div id="ur"></div>
+            </div>
+        </div>
+
+        <div id="play_knap"></div>
+        <div id="settings_knap"></div>
+        <div id="settings_knap2" class="hide"></div>
+
+
+        <div id="settings_menu" class="hide">
+            <div id="setting_effekt_sound">
+                <div id="sfx" class="on">
+                    <div id="sfx_sprite"></div>
+                </div>
+            </div>
+            <div id="setting_music">
+                <div id="music" class="on">
+                    <div id="music_sprite"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="luk_settings" class="hide"></div>
+        <div id="luk_settings_2" class="hide"></div>
+        <div id="info">
+            <div id="info_pop1"></div>
+            <div id="info_pop2"></div>
+            <div id="info_pop3"></div>
+            <div id="info_pop4"></div>
+            <div id="play_knap2"></div>
+        </div>
+
+
+        <div id="gameover" class="hide">
+            <a href=http://privatsnak.dk target="_blank"><div id="read_more"></div></a>
+            <div id="play_again"></div>
+        </div>
+
+        <div id="levelcomplete" class="hide">
+           <a href=http://privatsnak.dk target="_blank"><div id="read_more2"></div></a>
+            <div id="play_again2"></div>
+            <div id="highscore"></div>
+        </div>
+
+        <div id="levelcomplete2" class="hide">
+           <a href=http://privatsnak.dk target="_blank"><div id="read_more2"></div></a>
+            <div id="play_again3"></div>
+            <div id="highscore2"></div>
+        </div>
+
+        <div id="levelcomplete3" class="hide">
+           <a href=http://privatsnak.dk target="_blank"><div id="read_more2"></div></a>
+            <div id="play_again4"></div>
+            <div id="highscore3"></div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <audio id="musik">
+        <source src="LYD/baggrundsmusik.mp3" type="audio/mpeg">
+    </audio>
+
+
+
+    <audio id="omg">
+        <source src="LYD/omg.wav" type="audio/mpeg">
+    </audio>
+
+    <audio id="share">
+        <source src="LYD/send_lyd.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="trash">
+        <source src="LYD/trash.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="victory_sound">
+        <source src="LYD/Ta%20Da-SoundBible.com-1884170640.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="gameover_sound">
+        <source src="LYD/Sad_Trombone-Joe_Lamb-665429450.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="button">
+        <source src="LYD/Button_Press-Marianne_Gagnon-779186363.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="button_2">
+        <source src="LYD/Tiny%20Button%20Push-SoundBible.com-513260752.mp3" type="audio/mpeg">
+    </audio>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
