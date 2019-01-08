@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #D3DAB6;
+
+}
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.color1 {
+    background-color: #A5614D;
+}
+.color2 {
+    background-color: #BEB473;
+}
+.color3 {
+    background-color: #9FA681;
+}
+.color4 {
+    background-color: #D3DAB6;
+}
+.color5 {
+    background-color: #45584D;
+}
+#splash .section{
+    margin: 0 auto;
+}
+
+#styletile .forklaring {
+    font-size: 0.7rem;
+
+}
+
+#styletile .forklaring strong {
+    font-weight: 700;
+}
+
+ h1{
+    font-family: Ribeye;
+    color: #A5614D;
+    font-size: 3rem;
+}
+ h2,
+ h3{
+    font-family: Ribeye Marrow;
+    color: #A5614D;
+    font-size: 2rem;
+}
+p{
+    font-family: libre baskerville;
+    font-size: 1rem;
+    color: #000000;
+
+}
+#styletile a {
+    text-decoration: none;
+}
+
+/* unvisited link */
+#styletile a:link {}
+
+/* visited link */
+#styletile a:visited {}
+
+/* mouse over link */
+#styletile a:hover {}
+
+/* selected link */
+#styletile a:active {}
+

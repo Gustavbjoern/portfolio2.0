@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+    background-color: #D3DAB6;
+
+
+
+}
+img{
+    width: 100%;
+
+}
+section{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+#splash {
+    max-width: 100%;
+    line-height: 0px;
+}
+
+h1{
+    font-family: Ribeye;
+    color: #A5614D;
+    font-size: 3rem;
+    margin: 0 1rem;
+}
+ h2{
+    font-family: Ribeye Marrow;
+    color: #A5614D;
+    font-size: 2rem;
+    margin: 1rem;
+}
+#eksempler h2{
+    font-family: Ribeye;
+    color: #A5614D;
+    font-size: 2rem;
+
+}
+ h3{
+    font-family: Ribeye Marrow;
+    color: #A5614D;
+    font-size: 2rem;
+     margin: 1rem;
+}
+p{
+    font-family: libre baskerville;
+    font-size: 1rem;
+    color: #000000;
+    padding: 0 1rem;
+
+}
+.sectionwrapper{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.column{
+    flex-grow: 1;
+}
+/******* om *****/
+#om {
+    background-color: aliceblue;
+}
+#om .column{
+
+    flex-grow: 1;
+    flex-basis: 600px;
+}
+
+/******* eksempler ******/
+#eksempler{
+  background-color: antiquewhite;
+}
+#eksempler .column{
+   display: flex;
+    flex-wrap: wrap;
+    flex-basis: 700px;
+    margin: 0 1rem;
+    padding: 0.5rem;
+   flex-grow: 1;
+}
+#eksempler .bottom {
+    align-self: flex-end;
+}
+/*******typografi ******/
+#typografi{
+    background-color: beige;
+}
+#typografi .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+#typografi .column_wide {
+    flex-grow: 3;
+    flex-basis: 800px;
+    padding: 1rem;
+
+}
+
+
+#typografi .column_narrow {
+    flex-grow: 1;
+    flex-basis: 250px;
+    padding: 0.5rem;
+
+}
+
+#typografi .top {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#typografi .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+#typografi .txt {
+    flex-grow: 1;
+    flex-basis: 450px;
+}
+
+#typografi .image {
+    flex-grow: 1;
+    flex-basis: 450px;
+}
+
+/*******Komposition_farver*****/
+#komposition_farver{
+   background-color: blanchedalmond;
+}
+#komposition_farver .sectionwrapper{
+
+
+}
+
+#komposition_farver .column_wide{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 3;
+    flex-basis: 700px;
+    flex-direction: row;
+}
+
+#komposition_farver .column_narrow{
+
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+#komposition_farver .colors{
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+#komposition_farver .content{
+    flex-grow: 3;
+    flex-basis: 600px;
+
+}
+.colors div {
+
+    height: 5rem;
+    border: 1px solid;
+
+
+}
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.color1 {
+    background-color: #A5614D;
+}
+.color2 {
+    background-color: #BEB473;
+}
+.color3 {
+    background-color: #9FA681;
+}
+.color4 {
+    background-color: #D3DAB6;
+}
+.color5 {
+    background-color: #45584D;
+}
+
+/****************************  Menu  ****************************/
+
+#links{
+    background-color: burlywood;
+}
+#ekstra{
+   background-color: cornsilk;
+}
+
+/* unvisited link */
+header nav a:link,
+header nav a:active,
+header nav a:visited{
+    color: #f2e4d7;
+}
+
+/* mouse over link */
+header nav a:hover {
+    color: #ff3e2c;
+}
+
+
+
+header {
+    position: fixed;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 39%, rgba(0,0,0,0.5452556022408963) 86%, rgba(0,0,0,0) 100%);
+    width: 100%;
+
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 1rem;
+    padding: 0.3rem;
+}
+
+header nav a {
+    font-family: ribeye;
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+    padding: 0.3rem;
+}
+
+@media only screen and (min-width:1024px) {
+
+    header nav {
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 1rem 0;
+
+    }
+
+    header nav a {
+        border-right: 0.15rem #f2e4d7 solid;
+        padding: 0 1rem;
+    }
+
+    header nav a:last-child {
+        border-right: none;
+    }
+}
+
+/****************************  Menu slut  ****************************/
+@media only screen and (min-width:1120px) {
+    #eksempler .column{
+        flex-basis: 340px;
+    }
+}

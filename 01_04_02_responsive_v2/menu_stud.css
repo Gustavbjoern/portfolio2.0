@@ -1,0 +1,39 @@
+/****************************  Menu  ****************************/
+
+
+/* unvisited link */
+header nav a:link {
+    color: #f2e4d7;
+}
+
+/* visited link */
+header nav a:visited {
+    color: #f2e4d7;
+}
+
+/* mouse over link */
+header nav a:hover {
+    color: #ff3e2c;
+}
+
+/* selected link */
+header nav a:active {
+    color: #f2e4d7;
+}
+
+header {}
+
+header nav {}
+
+header nav a {}
+
+@media only screen and (min-width:???px) {
+
+    header nav {}
+
+    header nav a {}
+
+    header nav a:last-child {}
+}
+
+/****************************  Menu slut  ****************************/
