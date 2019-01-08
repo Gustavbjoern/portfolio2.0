@@ -1,0 +1,817 @@
+@font-face {
+    font-family: 'dk_crayon_crumbleregular';
+    src: url('font/dk_crayon_crumble-webfont.woff2') format('woff2'),
+        url('font/dk_crayon_crumble-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    font-size: 2vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'dk_crayon_crumbleregular';
+}
+
+#screen {
+    position: relative;
+    width: 100vw;
+    height: 56.25vw;
+    overflow: hidden;
+
+}
+
+/* EFFEKTER */
+.hide {
+    visibility: hidden;
+
+}
+
+.show {
+    visibility: visible;
+}
+
+.blur {
+    filter: blur(5px) brightness(80%);
+}
+
+.fade_out {
+    animation-name: fadeout_kf;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeout_kf {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.fade_in {
+    animation-name: fadein_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fadein_kf {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
+/**STARTSKÆRM OG PLAY**/
+
+#startskaerm {
+    background-image: url(SVG/startskaerm.svg);
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    position: absolute;
+    z-index: 3;
+}
+
+#gameover {
+    background-image: url(SVG/Gameover.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 100vw;
+    height: 56.25vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: -0vw;
+
+}
+
+#read_more {
+    background-image: url(SVG/laesmere.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 20vw;
+    height: 6vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 37vw;
+    left: 30vw;
+}
+
+#read_more2 {
+    background-image: url(SVG/laesmere.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 15vw;
+    height: 5vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 35vw;
+    left: 31vw;
+}
+
+#highscore {
+    font-family: 'dk_crayon_crumbleregular';
+    font-size: 1.8rem;
+    text-align: center;
+    color: #152230;
+    border-radius: 2vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 9vw;
+    height: 8.3vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 30vw;
+    left: 55vw;
+    transform: rotate(20deg);
+}
+
+#highscore2 {
+    font-family: 'dk_crayon_crumbleregular';
+    font-size: 1.8rem;
+    text-align: center;
+    color: #152230;
+    border-radius: 2vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 9vw;
+    height: 8.3vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 30vw;
+    left: 55vw;
+    transform: rotate(20deg);
+}
+
+#highscore3 {
+    font-family: 'dk_crayon_crumbleregular';
+    font-size: 1.8rem;
+    text-align: center;
+    color: #152230;
+    border-radius: 2vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 9vw;
+    height: 8.3vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 30vw;
+    left: 55vw;
+    transform: rotate(20deg);
+}
+
+
+
+#levelcomplete {
+    background-image: url(SVG/SVG/1_stjerne.svg);
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+#levelcomplete2 {
+    background-image: url(SVG/SVG/2%20stjerner.svg);
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+#levelcomplete3 {
+    background-image: url(SVG/SVG/3_stjerner.svg);
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+#info {
+
+    background-image: url(SVG/introscreen.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+
+
+}
+
+#info_pop1 {
+
+    background-image: url(SVG/introscreenpopup1.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 100%;
+    width: 20vw;
+    height: 20vw;
+    top: 8vw;
+    left: 15vw;
+
+
+}
+
+#info_pop2 {
+
+    background-image: url(SVG/introscreenpopup2.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 100%;
+    width: 20vw;
+    height: 20vw;
+    top: 2vw;
+    left: 68vw;
+    /*        animation-delay: 3s;*/
+}
+
+
+#info_pop3 {
+
+    background-image: url(SVG/introscreenpopup3.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 100%;
+    width: 20vw;
+    height: 20vw;
+    top: 25vw;
+    left: 13vw;
+    /*        animation-delay: 6s;*/
+
+}
+
+#info_pop4 {
+
+    background-image: url(SVG/introscreenpopup4.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 100%;
+    width: 20vw;
+    height: 20vw;
+    top: 18vw;
+    left: 70vw;
+    /*    animation-delay: 9s;*/
+
+}
+
+
+#play_knap {
+    background-image: url(SVG/Startknap.svg);
+    background-size: 100%;
+    width: 19vw;
+    height: 19vw;
+    top: 12vw;
+    left: 67vw;
+    position: absolute;
+    z-index: 4;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+#play_knap2 {
+    background-image: url(SVG/Startknap.svg);
+    background-size: 100%;
+    width: 19vw;
+    height: 19vw;
+    top: 36vw;
+    left: 65vw;
+    position: absolute;
+    z-index: 4;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    z-index: 4;
+    /*        animation-delay: 11s;*/
+}
+
+
+#play_again {
+    cursor: pointer;
+    background-image: url(SVG/replayknap.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 36vw;
+    left: 49vw;
+    height: 8vw;
+    width: 8vw;
+    z-index: 80;
+
+}
+
+#play_again2 {
+    cursor: pointer;
+    background-image: url(SVG/replayknap.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 35vw;
+    left: 46vw;
+    height: 8vw;
+    width: 8vw;
+
+}
+
+#play_again3 {
+    cursor: pointer;
+    background-image: url(SVG/replayknap.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 35vw;
+    left: 46vw;
+    height: 8vw;
+    width: 8vw;
+
+}
+
+#play_again4 {
+    cursor: pointer;
+    background-image: url(SVG/replayknap.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 35vw;
+    left: 46vw;
+    height: 8vw;
+    width: 8vw;
+
+}
+
+/**SELVE SPILLET**/
+#spilscene {
+    background-image: url(SVG/Gameplay.svg);
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    position: absolute;
+}
+
+#liv1 {
+    background-image: url(SVG/hjerte.svg);
+    background-size: 100%;
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 7.9vw;
+    left: 61.3vw;
+    transform: rotate(25deg);
+}
+
+
+#liv2 {
+    background-image: url(SVG/hjerte.svg);
+    background-size: 100%;
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 9.1vw;
+    left: 63.5vw;
+    transform: rotate(25deg);
+}
+
+#liv3 {
+    background-image: url(SVG/hjerte.svg);
+    background-size: 100%;
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 10.3vw;
+    left: 65.7vw;
+    transform: rotate(25deg);
+}
+
+#points {
+
+    font-family: 'dk_crayon_crumbleregular';
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    color: white;
+    font-size: 3rem;
+    top: 9vw;
+    left: 32.4vw;
+    transform: rotate(-21deg);
+
+}
+
+#ur {
+
+    background-image: url(SVG/fuckinur.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 100%;
+    top: 3vw;
+    left: 82vw;
+    height: 12vw;
+    width: 12vw;
+
+}
+
+#tid {
+    font-family: 'furura';
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    color: black;
+    font-size: 1.7rem;
+    top: 4.59vw;
+    left: 88.6vw;
+    z-index: 1;
+}
+
+.type1 {
+    background-image: url(SVG/dickpic.svg);
+    background-size: 100%;
+    width: 15vw;
+    height: 18vw;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+
+.type2 {
+    background-image: url(SVG/konenpick.svg);
+    background-size: 100%;
+    width: 15vw;
+    height: 18vw;
+    position: absolute;
+    background-repeat: no-repeat;
+
+}
+
+#del2 {
+    background-image: url(SVG/delknap.svg);
+    background-size: 100%;
+    width: 5.5vw;
+    height: 3vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 11.5vw;
+    left: 1.5vw;
+}
+
+#slet2 {
+    background-image: url(SVG/sletknap.svg);
+    background-size: 100%;
+    width: 5.3vw;
+    height: 2vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 11.5vw;
+    left: 7.5vw;
+}
+
+
+
+.type3 {
+    background-image: url(SVG/roosterplay.svg);
+    background-size: 100%;
+    width: 15vw;
+    height: 18vw;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+
+.type4 {
+    background-image: url(SVG/misplay.svg);
+    background-size: 100%;
+    width: 15vw;
+    height: 18vw;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+#del4 {
+    background-image: url(SVG/delknap.svg);
+    background-size: 100%;
+    width: 5.65vw;
+    height: 3vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 11.49vw;
+    left: 1.5vw;
+}
+
+#slet4 {
+    background-image: url(SVG/sletknap.svg);
+    background-size: 100%;
+    width: 5.65vw;
+    height: 3vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 11.4vw;
+    left: 8vw;
+}
+
+.position1 {
+    left: 70vw;
+    top: 10vw;
+}
+
+.position2 {
+    left: 85vw;
+    top: 17vw;
+}
+
+.position3 {
+    left: 15vw;
+    top: 12vw;
+}
+
+.position4 {
+    top: 16.6vw;
+}
+
+
+
+
+.pop_up {
+    animation-name: pop_up_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+
+@keyframes pop_up_kf {
+    0% {
+
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
+}
+
+
+.pop_down {
+    animation-name: pop_down_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+
+@keyframes pop_down_kf {
+    100% {
+
+        transform: scale(1);
+    }
+
+    0% {
+        transform: scale(0);
+
+    }
+
+}
+
+/**
+#info{
+    background-image: url(svg/SVG/regler.svg);
+    background-size: 100%;
+    width: 60vw;
+    height: 60vw;
+    top: 3vw;
+    left: 20vw;
+    position: absolute;
+    z-index: 4;
+}
+*/
+
+/**SETTINGS**/
+#settings_knap {
+    background-image: url(SVG/settings_knap.svg);
+    width: 8vw;
+    height: 8vw;
+    position: absolute;
+    z-index: 5;
+    background-size: 100%;
+    top: 1vw;
+    left: 1vw;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#settings_knap:hover{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#settings_knap2 {
+    background-image: url(SVG/settings_knap.svg);
+    width: 8vw;
+    height: 8vw;
+    position: absolute;
+    z-index: 5;
+    background-size: 100%;
+    top: 1vw;
+    left: 1vw;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+    z-index: 3;
+}
+
+#settings_knap2:hover{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+
+@keyframes rotate-btn {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+#settings_menu {
+    background-image: url(SVG/settings_menu.svg);
+    width: 23.5vw;
+    height: 45vw;
+    position: absolute;
+    z-index: 6;
+    background-size: 100%;
+    left: 36vw;
+    top: 6vw;
+    background-repeat: no-repeat;
+
+}
+
+#luk_settings {
+    background-image: url(SVG/exit_knap.svg);
+    width: 15vw;
+    height: 5.25vw;
+    position: absolute;
+    z-index: 6;
+    background-size: 100%;
+    left: 40.5vw;
+    top: 44vw;
+    background-repeat: no-repeat;
+}
+
+#luk_settings_2 {
+    background-image: url(SVG/exit_knap.svg);
+    width: 15vw;
+    height: 5.25vw;
+    position: absolute;
+    z-index: 6;
+    background-size: 100%;
+    left: 40.5vw;
+    top: 44vw;
+    background-repeat: no-repeat;
+}
+
+#music_sprite {
+    position: absolute;
+    background-size: 400% 100%;
+    width: 7vw;
+    height: 7vw;
+    background-image: url(SVG/toggle.svg);
+    display: inline-block;
+    left: 12vw;
+    top: 13vw;
+
+
+}
+
+#sfx_sprite {
+    position: absolute;
+    background-size: 400% 100%;
+    width: 7vw;
+    height: 7vw;
+    background-image: url(SVG/toggle.svg);
+    display: inline-block;
+    top: 23.4vw;
+    left: 12vw;
+
+}
+
+/*
+#ur_sprite {
+
+    background-image: url(SVG/Ursheet.svg);
+    background-size: 300% 100%;
+    position: absolute;
+    width: 9vw;
+    height: 9vw;
+    top: 22vw;
+
+
+}
+
+.sprite {
+
+    animation-name: ur_sprite_kf;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(20);
+}
+
+@keyframes ur_sprite_kf {
+    0% {
+        background-position: 0% 0%;
+
+    }
+
+    100% {
+
+        background-position: -2000% 0%;
+    }
+
+}
+*/
+
+
+
+#sfx h1,
+#music h1 {
+    display: inline-block;
+}
+
+.on {
+    background-position: 0;
+}
+
+.off {
+    background-position: -300% 0;
+}
+
+.off_on {
+    animation-name: on_off_kf;
+    animation-direction: reverse;
+    animation-duration: 0.1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: steps(3);
+}
+
+.on_off {
+    animation-name: on_off_kf;
+    animation-duration: 0.1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: steps(3);
+}
+
+@keyframes on_off_kf {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -300% 0;
+    }
+}
+
+
+
+/**TIMER**/
